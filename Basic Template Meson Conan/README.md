@@ -18,7 +18,7 @@ Basic startup for a CPP 20 project.
 - Conan: [Get Conan](https://docs.conan.io/2/installation.html)
 	- You will need [Python](https://www.python.org/downloads/)
 
-- Pkg-config: [Get Pkg-Config](https://github.com/GizzlyFacu/CPP-Templates?tab=readme-ov-file#%EF%B8%8F-install-pkg-config)
+- Pkg-config: read the principal README.md of this repository [Get Pkg-Config](https://github.com/GizzlyFacu/CPP-Templates?tab=readme-ov-file#%EF%B8%8F-install-pkg-config)
 ## How to Use:
 
 - click "setup.bat"
