@@ -37,5 +37,5 @@ I assume here that MinGW was installed to C:\MinGW. There were multiple versions
 6. go to http://ftp.gnome.org/pub/gnome/binaries/win32/glib/2.28
 7. download the file glib_2.28.8-1_win32.zip
 8. extract the file bin/libglib-2.0-0.dll to C:\MinGW\bin
-9. ==config the PATH of pkg-config.exe in system PATH.==
+9. config the PATH of pkg-config.exe in system PATH.
 Now CMake / Conan will be able to use pkg-config if it is configured to use MinGW.
