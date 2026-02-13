@@ -23,7 +23,7 @@
 ## 🧞‍♂️ Extra Guides:
 ### ⚙️ Install pkg-config
 Why install this instead of just using CMake as a method for install dependencies?:
-  - Meson has problems with last versions of "method: CMake", unsupported advanced functions that can't be recognized from CMake.
+  - Meson has problems with the last versions of "method: CMake", unsupported advanced functions that can't be recognized from CMake.
 
  Guide:
 This is a step-by-step procedure to get pkg-config working on Windows, based on my experience.
