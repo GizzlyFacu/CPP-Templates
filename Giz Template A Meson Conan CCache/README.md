@@ -2,7 +2,7 @@
 <div align="center">
   <img src="https://media.tenor.com/I5aq34ObejoAAAAj/capcut-capcut-effect.gif" style="height: 100px; width: auto;" />
 <a href="https://youtu.be/NkRkuI0ZgX0?si=zJaeqLEEkG7DG_V-">
- <img src="https://media1.tenor.com/m/lnpxuI9vBvwAAAAd/salvatore-ganacci-dance.gif" style="height: 200px; width: auto;" />
+ <img src="https://media1.tenor.com/m/QIDN6VnGHB0AAAAd/wood-salvatore-ganacci.gif" style="height: 200px; width: auto;" />
 </a>
   <img src="https://media.tenor.com/I5aq34ObejoAAAAj/capcut-capcut-effect.gif" style="height: 100px; width: auto;" />
 </div>
