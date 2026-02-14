@@ -1,0 +1,10 @@
+[requires]
+fmt/12.1.0
+
+[tool_requires]
+ccache/4.12.2
+
+
+[generators]
+PkgConfigDeps
+MesonToolchain

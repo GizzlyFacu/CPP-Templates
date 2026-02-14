@@ -1,39 +1,36 @@
 @echo off
+REM -----------Conan Build-----------
 
-REM ---------Conan Build ----------------------
 set CONAN_BUILD_DIR=conan-build
-
 if not exist %CONAN_BUILD_DIR% (
-    echo Creating conan build directory and installing dependencies...
-    conan install . --profile=conan-profile/gizdefault --output-folder=%CONAN_BUILD_DIR% --build=missing
 
-    if errorlevel 1 (
+	conan install . --profile=conan-profile/gcc-ccache --output-folder=%CONAN_BUILD_DIR% --build=missing
+	if errorlevel 1 (
     	echo Conan Build failed.
     	pause
     	exit /b %ERRORLEVEL%
     )
 
-) else (
+	call %CONAN_BUILD_DIR%/conanbuild.bat
+	
+)else (
     echo Reconfiguring project...
     rmdir /s /q conan-build
-    conan install . --output-folder=%CONAN_BUILD_DIR% --build=missing
+    conan install . --profile=conan-profile/gcc-ccache --output-folder=%CONAN_BUILD_DIR% --build=missing
 )
 
 echo Conan Build successful.
 
 
-
-REM ------------------Meson Build-------------------------
+REM -----------Meson Build-----------
 set MESON_BUILD_DIR=meson-build
-
 if not exist %MESON_BUILD_DIR% (
-    echo Creating meson build directory using the .ini file from Conan...
-    meson setup %MESON_BUILD_DIR% --native-file %CONAN_BUILD_DIR%/conan_meson_native.ini
+	meson setup %MESON_BUILD_DIR% --native-file %CONAN_BUILD_DIR%/conan_meson_native.ini
 ) else (
+
     echo Reconfiguring project...
     rmdir /s /q meson-build
     meson setup %MESON_BUILD_DIR% --native-file %CONAN_BUILD_DIR%/conan_meson_native.ini
-
 )
 
 echo Compiling...
