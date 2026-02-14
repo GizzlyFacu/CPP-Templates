@@ -54,7 +54,11 @@ cmake/3.27.9
 - next you need to add a line in the setup.bat after "conan . install". IN THIS TEMPLATE is already placed so u don't need to.
 ``call %CONAN_BUILD_DIR%/conanbuild.bat``
 - last [configure cmake in meson.build](https://mesonbuild.com/CMake-module.html)
+
+#### Wtf is ccache?
+- Something yoinky sploinky to speed up the compiling time, it will save you hours of your life.
 ## Details:
 
 - Edit the meson.build if you want different names (app.exe, subfolders, etc.)
 	- [Meson Tutorial](https://mesonbuild.com/Tutorial.html)
+- Check the ccache commands, remember to clear it occasionally; it's configured for 5 GB of cache.
