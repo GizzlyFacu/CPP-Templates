@@ -1,15 +1,15 @@
-# Basic Template with Conan and Meson
+# Giz Template "A"
 <div align="center">
-  <img src="https://media.tenor.com/I5aq34ObejoAAAAj/capcut-capcut-effect.gif" style="height: 100px; width: auto;" />
+  <img src="https://static.wixstatic.com/media/abf944_52a07dc3bb7547bdb7a39f4808a754e0~mv2.gif" style="height: 100px; width: auto;" />
 <a href="https://youtu.be/hSMHtM4iM8I?si=dj8lQ5UeQI8fBkcf">
- <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3gyM2xtM3JvMDczdGNhbXU2djhzbHg3czMwZ3Zrc2hnbGVpejR5OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XnBybQCSMFNDXUtRnV/giphy.gif" style="height: 200px; width: auto;" />
+ <img src="https://media.tenor.com/WKJDlYe0u1QAAAAi/ppp.gif" style="height: 200px; width: auto;" />
 </a>
-  <img src="https://media.tenor.com/I5aq34ObejoAAAAj/capcut-capcut-effect.gif" style="height: 100px; width: auto;" />
+  <img src="https://static.wixstatic.com/media/abf944_52a07dc3bb7547bdb7a39f4808a754e0~mv2.gif" style="height: 100px; width: auto;" />
 </div>
 
 ---
 
-My all-project startup for C++17
+My **FAST** and **PRODUCTIVE** all-project startup for C++17. Rise my creation!
 
 ## Requirements:
 
@@ -17,7 +17,7 @@ My all-project startup for C++17
 	- Check the steps in the same download msys2 page.
  	- Add C:\\msys64\\mingw64\\bin to the [System PATH](https://youtu.be/pGRw1bgb1gU?si=HhE\_k-wTZso74HdD).	
 	- Verify: Open Windows Powershell and paste inside "g++ --version", if something happens, it's correctly installed.
-	- **IMPORTANT:** you can use MVSC with Meson if u have already installed Visual Studio. But I use MinGW for better portability.
+	- **IMPORTANT:** you can use MVSC with Meson if u have already installed Visual Studio (change the conan-profile). But I use MinGW for better portability.
 
 - Meson: [Get Meson](https://mesonbuild.com/Getting-meson.html#installing-meson-and-ninja-with-the-msi-installer)
 	- You will need [Python](https://www.python.org/downloads/)
@@ -31,6 +31,29 @@ My all-project startup for C++17
 - click "setup.bat"
 - buy 200 kg of Mercury powder + 1 goblin gear + 2 flechipollas.
 
+---
+## FAQ
+#### LIBRARIES: What if I want to use another library like SFML?
+- in the conanfile.txt put this:
+```pyhon
+[requires]
+sfml/3.0.2
+```
+How do I know which versions of the library are available?
+- open the cmd / powershell and type the comman below; change 'sfml' with the library you are interested in, must show you a list.
+
+``conan search sfml``
+
+#### TOOLS: What if I want to use another tool like CMake?
+[Detailed Tutorial](https://docs.conan.io/2/tutorial/consuming_packages/use_tools_as_conan_packages.html)
+- in the conanfile.txt put this
+```pyhon
+[tool_requires]
+cmake/3.27.9
+```
+- next you need to add a line in the setup.bat after "conan . install". IN THIS TEMPLATE is already placed so u don't need to.
+``call %CONAN_BUILD_DIR%/conanbuild.bat``
+- last [configure cmake in meson.build](https://mesonbuild.com/CMake-module.html)
 ## Details:
 
 - Edit the meson.build if you want different names (app.exe, subfolders, etc.)
