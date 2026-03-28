@@ -1,7 +1,7 @@
-# Basic Template with CCache
+# Basic Template
 ---
 
-Basic startup for a CPP 17 project **without Conan**, this example uses CCache but doesn't matter if you didn't install it yet. It works anyway.
+Basic startup for a CPP 17 project **without Conan**. Just you, c++ and the stanrdad library.
 
 ## Requirements:
 

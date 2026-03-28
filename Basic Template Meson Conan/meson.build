@@ -1,4 +1,4 @@
-project('meson-conan-ccache-project', 'cpp',
+project('meson-conan-project', 'cpp',
   default_options: [
     'cpp_std=c++17',
     'buildtype=release',

@@ -11,7 +11,7 @@
 
 ## 🧞‍♂️ Details:
 - System Build: Meson ♥️ [Get Meson](https://mesonbuild.com/Getting-meson.html#installing-meson-and-ninja-with-the-msi-installer)
-- Package Manager: Conan ♥️ [pls throw away cmake and Get Conan](https://docs.conan.io/2/installation.html#install-with-pip-recommended)
+- Package Manager: Conan ♥️ [Get Conan](https://docs.conan.io/2/installation.html#install-with-pip-recommended)
   - Method: pkg-config. (Install guide and why pkg config below)
 - Principal Toolchain: MingGW  (gcc.exe / g++.exe)
 - C++ version: >C++17
