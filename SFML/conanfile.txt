@@ -1,0 +1,9 @@
+[requires]
+sfml/3.0.2
+
+[tool_requires]
+ccache/4.12.2
+
+[generators]
+PkgConfigDeps
+MesonToolchain

@@ -8,9 +8,10 @@ project('ccache-template', 'cpp',
     'warning_level=3'
   ]
 )
-# Dependencies
-fmt_deps = dependency('fmt', method: 'pkg-config', required: true)
+
+# SFML debe estar instalado con soporte pkg-config
+sfml_deps = dependency('sfml-all-graphics', method: 'pkg-config')
 
 executable('app',
   'src/main.cpp',
-dependencies: fmt_deps)
+dependencies: sfml_deps)
