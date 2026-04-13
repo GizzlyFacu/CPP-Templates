@@ -1,0 +1,10 @@
+[requires]
+gtest/1.17.0
+pkgconf/2.5.1
+
+[tool_requires]
+ccache/4.12.2
+
+[generators]
+PkgConfigDeps
+MesonToolchain
